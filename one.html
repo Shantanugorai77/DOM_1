@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM learning</title>
+    <style>
+        .bg-black {
+            background-color: rgb(0, 0, 0); /* corrected */
+            color: aliceblue;              /* keep as is */
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">DOM learning on chai aur code</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, ratione.</p>
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li> <!-- changed from 'three' -->
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+            <li class="list-item">five</li>
+        </ul>
+    </div>
+</body>
+<script>
+    const div = document.createElement('div');
+    console.log(div);
+    div.style.backgroundColor = 'cadetblue';
+    div.style.padding = '15px';
+    div.style.borderRadius = '5px';
+    div.innerText = 'Code  to protect';
+    document.body.appendChild(div);
+
+
+</script>
+</html>
